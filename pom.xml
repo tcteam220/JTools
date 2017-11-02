@@ -18,6 +18,8 @@
 	<modules>
 		<module>jtools-deploy</module>
 		<module>jtools-springboot</module>
+		<module>jtools-common</module>
+		<module>jtools-db</module>
 	</modules>
 	
 	

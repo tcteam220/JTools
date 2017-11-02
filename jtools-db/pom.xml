@@ -1,0 +1,69 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.jtools</groupId>
+		<artifactId>jtools</artifactId>
+		<version>1.0</version>
+	</parent>
+	<artifactId>jtools-db</artifactId>
+	<name>jtools-db</name>
+	<description>数据库链接</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<leveldb.version>0.9</leveldb.version>
+		<leveldbjni.version>1.8</leveldbjni.version>
+		<log4j.version>1.7.21</log4j.version>
+		<junit.version>4.8.2</junit.version>
+		<jtools-common>1.0</jtools-common>
+	</properties>
+
+	<dependencies>
+		<!-- leveldb -->
+		<!-- <dependency> <groupId>org.iq80.leveldb</groupId> <artifactId>leveldb</artifactId> 
+			<version>${leveldb.version}</version> </dependency> -->
+		<dependency>
+			<groupId>org.fusesource.leveldbjni</groupId>
+			<artifactId>leveldbjni-all</artifactId>
+			<version>${leveldbjni.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.fusesource.leveldbjni</groupId>
+			<artifactId>leveldbjni</artifactId>
+			<version>${leveldbjni.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.fusesource.leveldbjni</groupId>
+			<artifactId>leveldbjni-win64</artifactId>
+			<version>${leveldbjni.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.fusesource.leveldbjni</groupId>
+			<artifactId>leveldbjni-linux64</artifactId>
+			<version>${leveldbjni.version}</version>
+		</dependency>
+		<!-- slf4j -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<!-- junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jtools</groupId>
+			<artifactId>jtools-common</artifactId>
+			<version>${jtools-common}</version>
+		</dependency>
+	</dependencies>
+
+</project>
