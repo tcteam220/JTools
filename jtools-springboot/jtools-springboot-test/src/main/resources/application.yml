@@ -1,0 +1,22 @@
+# Server settings  
+server:  
+    port: 8080
+    address: 127.0.0.1
+# SPRING PROFILES  
+spring:         
+    # HTTP ENCODING  
+    http:  
+        encoding.charset: UTF-8  
+        encoding.enable: true  
+        encoding.force: true  
+    mvc:
+        view.prefix: /WEB-INF/jsp/
+        view.suffix: .jsp           
+    datasource:  
+        driverClass: com.mysql.jdbc.Driver  
+        url: jdbc:mysql://127.0.0.1:3306/sbm 
+        username: root
+        password: 123456
+mybatis:
+    type-aliases-package: com.ghost.entity
+    mapper-locations: classpath:mapper/*Mapper.xml
