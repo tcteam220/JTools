@@ -1,4 +1,4 @@
-package org.jtools.deploy.controller;
+package org.jtools.springboot.test.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

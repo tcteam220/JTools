@@ -1,4 +1,4 @@
-package org.jtools.deploy;
+package org.jtools.springboot.test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
