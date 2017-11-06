@@ -29,21 +29,25 @@
 			<groupId>org.fusesource.leveldbjni</groupId>
 			<artifactId>leveldbjni-all</artifactId>
 			<version>${leveldbjni.version}</version>
+			<scope>complie</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.fusesource.leveldbjni</groupId>
 			<artifactId>leveldbjni</artifactId>
 			<version>${leveldbjni.version}</version>
+			<scope>complie</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.fusesource.leveldbjni</groupId>
 			<artifactId>leveldbjni-win64</artifactId>
 			<version>${leveldbjni.version}</version>
+			<scope>complie</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.fusesource.leveldbjni</groupId>
 			<artifactId>leveldbjni-linux64</artifactId>
 			<version>${leveldbjni.version}</version>
+			<scope>complie</scope>
 		</dependency>
 		<!-- slf4j -->
 		<dependency>
@@ -63,7 +67,27 @@
 			<groupId>com.jtools</groupId>
 			<artifactId>jtools-common</artifactId>
 			<version>${jtools-common}</version>
+			<scope>complie</scope>
 		</dependency>
 	</dependencies>
 
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<executions>
+					<execution>
+						<phase>compile</phase>
+					</execution>
+				</executions>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>

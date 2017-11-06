@@ -37,6 +37,16 @@
 			<version>${springboot.version}</version>
 			<scope>test</scope>
 		</dependency>
+		
+		
+		<dependency>
+			  <groupId>com.jtools</groupId>
+			  <artifactId>jtools-ui</artifactId>
+			  <type>war</type>
+			  <scope>compile</scope>
+			  <version>1.0</version>
+		</dependency>
+		
     </dependencies>
 </dependencyManagement>
 
@@ -51,6 +61,7 @@
 	</build>
   
 	<modules>
-		<module>jtools-springboot-test</module>
+		<module>jtools-springboot-demo</module>
+		<module>jtools-springboot-server</module>
 	</modules>
 </project>

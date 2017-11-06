@@ -16,7 +16,7 @@ public class PropertiesUtils {
 
 private static final String FILE_NAME = "jtools.properties";
 	
-	private static Properties prop = loadProperties(FILE_NAME);
+	private static Properties prop = null;
 	
 	private  static ResourceBundle appRb = ResourceBundle.getBundle("jtools");
 	

@@ -14,13 +14,29 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 	</properties>
+	
+	
+
 
 	<modules>
 		<module>jtools-deploy</module>
 		<module>jtools-springboot</module>
 		<module>jtools-common</module>
 		<module>jtools-db</module>
+		<module>jtools-ui</module>
 	</modules>
 	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<encoding>utf-8</encoding>
+					<packagingExcludes>WEB-INF/web.xml</packagingExcludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 	
 </project>

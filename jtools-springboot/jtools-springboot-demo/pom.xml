@@ -7,8 +7,8 @@
 		<version>1.0</version>
 	</parent>
 	<groupId>com.jtools.springboot</groupId>
-	<artifactId>jtools-springboot-test</artifactId>
-	<name>test</name>
+	<artifactId>jtools-springboot-demo</artifactId>
+	<name>jtools-springboot-demo</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

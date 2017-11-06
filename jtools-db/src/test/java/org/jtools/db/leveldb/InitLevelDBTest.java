@@ -29,7 +29,7 @@ public class InitLevelDBTest {
 			e.printStackTrace();
 		}
 		db.put(key.getBytes(charset), value.getBytes(charset));
-		Assert.assertEquals(value.getBytes(charset), db.get(key.getBytes(charset)));
+		Assert.assertEquals(value, new String(db.get(key.getBytes(charset)),charset));
 	}
 	
 }
