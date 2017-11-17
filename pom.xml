@@ -24,6 +24,7 @@
 		<module>jtools-common</module>
 		<module>jtools-db</module>
 		<module>jtools-ui</module>
+		<module>jtools-core</module>
 	</modules>
 	
 	<build>
